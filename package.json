@@ -1,4 +1,23 @@
 {
+  "name": "namastae-react",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/kapil-0455/namastae-react#readme",
+  "bugs": {
+    "url": "https://github.com/kapil-0455/namastae-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapil-0455/namastae-react.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
   "dependencies": {
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
