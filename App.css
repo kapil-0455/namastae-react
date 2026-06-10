@@ -20,21 +20,27 @@
   font-size: 20px;
 }
 
-/* Card Container to make cards sit side by side */
+.body {
+  padding: 10px;
+  width: 100%;
+}
+
+/* Card Container to make cards sit side by side and fill the screen */
 .res-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
 }
 
 /* Individual Restaurant Card styling */
 .card {
-  width: 200px;
   padding: 5px;
-  margin: 5px;
+  border: 1px solid transparent; /* Prevents size change on hover */
 }
 
 .card:hover {
-  border: 1px solid black;
+  border-color: black; /* Changes color instead of adding border width */
   cursor: pointer;
 }
 
