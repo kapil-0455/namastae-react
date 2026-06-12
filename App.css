@@ -1,52 +1,146 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
   align-items: center;
-  padding: 8px;
+  padding: 8px 32px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .img-logo {
-  width: 80px;
+  width: 70px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.img-logo:hover {
+  transform: scale(1.05);
 }
 
 .title-container > ul {
   display: flex;
   list-style-type: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .title-container li {
-  padding: 10px;
-  font-size: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.title-container li:hover {
+  color: #e46d47;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #333;
 }
 
 .body {
-  padding: 10px;
+  padding: 24px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 /* Card Container to make cards sit side by side and fill the screen */
 .res-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
   width: 100%;
+  padding: 16px 0;
 }
 
 /* Individual Restaurant Card styling */
 .card {
-  padding: 5px;
-  border: 1px solid transparent; /* Prevents size change on hover */
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
-  border-color: black; /* Changes color instead of adding border width */
-  cursor: pointer;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  border-color: #e0e0e0;
 }
+
+.card h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 12px 0 6px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #1a1a1a;
+}
+
+.card h3 {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card h4 {
+  font-size: 0.9rem;
+  margin: 0 0 6px 0;
+  color: #e46d47;
+  font-weight: 600;
+}
+
+.card h5 {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 0 0 6px 0;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 4px 0 0 0;
+  font-weight: 500;
+}
+
 
 /* Restaurant Card Logo image */
 .res-logo {
   width: 100%;
   height: 150px;
   object-fit: cover;
+  border-radius: 8px;
 }
+
+/* Shimmer UI styles */
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+
+
