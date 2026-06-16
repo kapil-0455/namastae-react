@@ -71,6 +71,9 @@ body {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -211,6 +214,130 @@ body {
 
 .btn-filter:active {
   transform: scale(0.97);
+}
+
+.res-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Restaurant Menu Styling */
+.menu-container {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0f0f0;
+}
+
+.menu-header {
+  border-bottom: 2px dashed #eee;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.restaurant-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+}
+
+.restaurant-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cuisine-list {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.cost-message {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.rating-tag {
+  background-color: #e46d47;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.menu-items-section {
+  padding-top: 8px;
+}
+
+.category-title {
+  font-size: 1.35rem;
+  font-weight: 650;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  border-left: 4px solid #e46d47;
+  padding-left: 10px;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu-item-card {
+  padding: 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  background-color: #fafafa;
+}
+
+.menu-item-card:hover {
+  border-color: #e46d47;
+  box-shadow: 0 4px 12px rgba(228, 109, 71, 0.05);
+  transform: translateY(-2px);
+}
+
+.menu-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.item-price {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e46d47;
+  margin: 0;
+}
+
+.item-description {
+  font-size: 0.85rem;
+  color: #777;
+  margin: 6px 0 0 0;
+  line-height: 1.4;
 }
 
 
