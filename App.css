@@ -340,5 +340,10 @@ body {
   line-height: 1.4;
 }
 
+.user{
+  border: 1px solid black;
+  margin : 10px
+}
+
 
 

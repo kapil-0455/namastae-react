@@ -6,9 +6,9 @@ const About = ()=>{
             <h1>About us </h1>
             <h3>What you want to Know</h3>
 
-            <div>
+            <div className='user'>
                 <User/>
-                <UserClass/>
+                <UserClass name = {"Kapil"} branch = {"MBA"}/>
             </div>
         </div>
         
